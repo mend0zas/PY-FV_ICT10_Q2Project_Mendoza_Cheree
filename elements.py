@@ -1,4 +1,3 @@
-
 from pyscript import document
 
 # Dictionary containing information about nonmetal elements.

@@ -1,4 +1,3 @@
-
 from pyscript import document
 
 # These are the existing members of the volleyball varsity team.

@@ -1,4 +1,3 @@
-
 from pyscript import document
 
 # Dictionary containing the names of the volleyball varsity members.
