@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Q2 Portfolio | Home</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff8dc, #f2d58a);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+            color: #493813;
+        }
+
+        nav {
+            background: #fff9e8;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #dfc477;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #75551b;
+            margin: 0 8px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #c17b00;
+            font-weight: bold;
+        }
+
+        .brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #946000;
+        }
+
+        .container {
+            width: min(900px, 90%);
+            margin: 45px auto;
+            padding: 35px;
+            background: #fffdf3;
+            border: 1px solid #e5cf8c;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px #8c6b2420;
+        }
+
+        h1 {
+            color: #bd7900;
+        }
+
+        h2 {
+            color: #a66d00;
+            font-weight: normal;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .form-area {
+            width: min(380px, 100%);
+            margin: auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0;
+            border: 1px solid #c8ad65;
+            border-radius: 10px;
+            background: #fffaf0;
+            font: inherit;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #d69e2e;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            background: #e5a51e;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        button:hover {
+            background: #c8870b;
+        }
+
+        #output1 {
+            margin-top: 20px;
+            color: #75551b;
+        }
+
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #fff5d5;
+            padding: 20px;
+            border: 1px solid #e5cf8c;
+            border-radius: 13px;
+            text-decoration: none;
+            color: #59451d;
+        }
+
+        .card:hover {
+            background: #ffedb8;
+        }
+
+        .card h3 {
+            color: #a66d00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #806c42;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                justify-content: center;
+            }
+
+            nav div {
+                text-align: center;
+            }
+
+            .container {
+                padding: 25px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a class="brand" href="index.html">MY Q2 PORTFOLIO</a>
+
+        <div>
+            <a class="active" href="index.html">Home</a>
+            <a href="skillstest.html">Element Checker</a>
+            <a href="drill2.html">Club Members</a>
+            <a href="creator.html">Meet the Creator</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Volleyball Varsity ♡</h1>
+        <h2>Candidate Verification Check!</h2>
+
+        <p>
+            Enter your first and last name to check
+            whether you are part of the volleyball varsity.
+        </p>
+
+        <div class="form-area">
+            <input type="text" id="input1" placeholder="First name">
+            <input type="text" id="input2" placeholder="Last name">
+
+            <button type="button" py-click="add_names">
+                Verify!
+            </button>
+
+            <div id="output1"></div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Explore My Activities</h1>
+
+        <div class="activities">
+
+            <a href="skillstest.html" class="card">
+                <h3>⚛ Element Checker</h3>
+                <p>Explore information about nonmetal elements.</p>
+            </a>
+
+            <a href="drill2.html" class="card">
+                <h3>♧ Club Members</h3>
+                <p>View and add volleyball varsity members.</p>
+            </a>
+
+            <a href="creator.html" class="card">
+                <h3>✦ Meet the Creator</h3>
+                <p>Get to know the person behind this portfolio.</p>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>My Second Quarter Python/PyScript Portfolio</footer>
+
+    <script type="py" src="seatwork1.py"></script>
+
+</body>
+</html>
